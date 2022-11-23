@@ -2,23 +2,19 @@
   "pages": [
     {
       "path": "pages/home/home",
-      "style": {
-      }
+      "style": {}
     },
     {
       "path": "pages/my/my",
-      "style": {
-      }
+      "style": {}
     },
     {
       "path": "pages/cart/cart",
-      "style": {
-      }
+      "style": {}
     },
     {
       "path": "pages/cate/cate",
-      "style": {
-      }
+      "style": {}
     }
   ],
   "globalStyle": {
@@ -27,7 +23,26 @@
     "navigationBarBackgroundColor": "#ef4a4b",
     "backgroundColor": "#ef4a4b"
   },
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        {
+          "path": "good_detail/good_detail",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        },{
+          "path": "goods_list/goods_list",
+          "style":{}
+        }
+      ]
+    }
+  ],
   "tabBar": {
+    "selectedColor": "#b6b1ab",
+    "backgroundColor": "#fe750d",
     "list": [
       {
         "pagePath": "pages/home/home",
