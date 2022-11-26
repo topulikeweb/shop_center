@@ -1,5 +1,6 @@
 <template>
   <view>
+    <search></search>
     <view class="scroll-view-container">
       <!-- 左侧的滚动视图区域 -->
       <scroll-view class="left-scroll-view" scroll-y="true" :style="{ height: wh + 'px' }">
@@ -67,9 +68,9 @@ export default {
     changeActive(index) {
       this.active = index// 改变active的值
       this.cateList2 = this.cateList[index].children
-      for (let i = 0; i < this.cateList2.length; i++) {
-        this.cateList3.push(this.cateList2[i].children)
-      }
+      // for (let i = 0; i < this.cateList2.length; i++) {
+      //   this.cateList3.push(this.cateList2[i].children)
+      // }
       this.scrollTop = this.scrollTop === 0 ? 1 : 0//每次切换一级标题，都要将右边的二级三级标题视图改为顶部
     },
     toGoodsdetail(item2) {
@@ -77,12 +78,19 @@ export default {
         url: `/subpkg/goods_list/goods_list?cid=${item2.cat_id}`
       })
     },
+    forsearch() {
+      console.log(1212);
+      // uni.navigateTo({
+      //   url: `/subpkg/search/search`
+      // })
+    }
   },
 }
 </script>
 
 <style scoped>
 .scroll-view-container {
+  /* top: 50px; */
   display: flex
 }
 

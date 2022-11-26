@@ -1,4 +1,10 @@
 {
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
   "pages": [
     {
       "path": "pages/home/home",
@@ -33,9 +39,14 @@
             "navigationBarTitleText": "",
             "enablePullDownRefresh": false
           }
-        },{
+        },
+        {
           "path": "goods_list/goods_list",
-          "style":{}
+          "style": {}
+        },
+        {
+          "path": "search/tosearch",
+          "style": {}
         }
       ]
     }
