@@ -1,4 +1,4 @@
-<!--  -->
+<!-- 商品详情 -->
 <template>
     <view>12312</view>
 </template>

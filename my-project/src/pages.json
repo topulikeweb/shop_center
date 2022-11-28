@@ -42,7 +42,10 @@
         },
         {
           "path": "goods_list/goods_list",
-          "style": {}
+          "style": {
+            "onReachBottomDistance": 150,
+            "enablePullDownRefresh": true
+          }
         },
         {
           "path": "search/tosearch",
