@@ -1,10 +1,10 @@
 <template>
-  <!-- <view>nihao</view> -->
+  <view>购物车</view>
 </template>
 
 <script>
 export default {
-  name: "catt"
+  name: "cart"
 }
 </script>
 

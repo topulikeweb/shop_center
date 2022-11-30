@@ -42,7 +42,7 @@ export default {
             // 请求出来的结果
             total: 0,
             // 图片未加载出来的时候显示
-            defaultImage: 'https://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E5%9D%A4%E5%9D%A4&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=1221191893,1868984206&os=2124921848,1271044846&simid=4099758292,458320396&pn=3&rn=1&di=7163459808492781569&ln=1421&fr=&fmq=1669560288513_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=1e&objurl=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%253A%252F%252Fn.sinaimg.cn%252Fsinacn23%252F693%252Fw1977h1116%252F20180626%252F8e29-hencxtu7721955.jpg%26refer%3Dhttp%253A%252F%252Fn.sinaimg.cn%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Dauto%3Fsec%3D1672152287%26t%3D8bb88d2f812304b0ee64e457114f742d&rpstart=0&rpnum=0&adpicid=0&nojc=undefined&dyTabStr=MCwzLDIsNiw0LDEsNSw4LDcsOQ%3D%3D'
+            defaultImage: 'https://tse4-mm.cn.bing.net/th/id/OIP-C.tgnJpntImFognfxa_wINyAHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7'
 
         }
     },
