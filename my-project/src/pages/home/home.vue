@@ -40,10 +40,13 @@
   </view>
 </template>
 <script>
+import { mapGetters } from 'vuex'
+import badgeMix from '@/mixins/mixins/tabbar-badge.js'
 
 
 export default {
   name: "home",
+  mixins: [badgeMix],
   data() {
     return {
       swiperList: [],

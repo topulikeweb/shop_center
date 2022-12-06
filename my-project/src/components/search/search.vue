@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { uniIcons } from '@dcloudio/uni-ui'
+import { uniIcons } from '@dcloudio/uni-ui'                                                                                                                                                                                                                                                                                                                                                                                                         
 //import uniBadge from '@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue' //也可使用此方式引入组件
 export default {
     components: { uniIcons },
@@ -45,7 +45,7 @@ export default {
     /* display: flex; */
     height: 50px;
     width: 100%;
-    background-color: #ef4a4b;
+    background-color: #efd34a;
     z-index: 999;
 }
 

@@ -25,8 +25,8 @@
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "YY商场",
-    "navigationBarBackgroundColor": "#ef4a4b",
+    "navigationBarTitleText": "石油商场",
+    "navigationBarBackgroundColor": "#efd34a",
     "backgroundColor": "#ef4a4b"
   },
   "subPackages": [
@@ -55,28 +55,32 @@
     }
   ],
   "tabBar": {
-    "selectedColor": "#b6b1ab",
-    "backgroundColor": "#fe750d",
+    "selectedColor": "#f73636",
+    "backgroundColor": "#fdfdfd",
     "list": [
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "./static/img.png"
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-o.png"
       },
       {
         "pagePath": "pages/cate/cate",
         "text": "分类",
-        "iconPath": "./static/img_1.png"
+        "iconPath": "static/tabs/category.png",
+        "selectedIconPath": "static/tabs/category-o.png"
       },
       {
         "pagePath": "pages/cart/cart",
         "text": "购物车",
-        "iconPath": "./static/img_2.png"
+        "iconPath": "static/tabs/cart.png",
+        "selectedIconPath": "static/tabs/cart-o.png"
       },
       {
         "pagePath": "pages/my/my",
-        "text": "我的",
-        "iconPath": "./static/img_3.png"
+        "text": "购物车",
+        "iconPath": "static/tabs/my.png",
+        "selectedIconPath": "static/tabs/my-o.png"
       }
     ]
   }
