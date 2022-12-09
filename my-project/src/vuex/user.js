@@ -1,28 +1,43 @@
 export default {
   namespaced: true,
   state: () => ({
-    address: JSON.parse(uni.getStorageSync('address') || '{}')
+    address: JSON.parse(uni.getStorageSync('address') || '{}'),
+    // 登录储存
+    token: uni.getStorageSync('token' || ''),
+    // 用户的信息
+    userInfo: JSON.parse(uni.getStorageSync('userInfo') || '{}'),
+    // 重新定向的object对象（将跳转之前的数据保存）
+    redirectInfo: null
   }),
   mutations: {
-    // 更新用户数据
-    updateAddress (state, address) {
-      state.address = address
-      // state.address = ({
-      //   cityName: "兰州市",
-      //   countyName: "海珠区",
-      //   detailInfo: "新港中路397号",
-      //   errMsg: "chooseAddress:ok",
-      //   nationalCode: "510000",
-      //   postalCode: "510000",
-      //   provinceName: "广东省",
-      //   telNumber: "020-81167888",
-      //   userName: "张三"
-      // })
-      this.commit('m_user/saveAddressToStorage')
-    },
     // 将address永久储存
     saveAddressToStorage (state) {
       uni.setStorageSync('address', JSON.stringify(state.address))
+    },
+    saveUserInfoToStorage (state) {
+      uni.setStorageSync('userInfo', JSON.stringify(state.userInfo))
+    },
+    // 将token存入本地
+    saveTokenToStorage (state) {
+      uni.setStorageSync('token', JSON.stringify(state.token))
+    },
+    // 更新用户数据
+    updateAddress (state, address) {
+      state.address = address
+      this.commit('m_user/saveAddressToStorage')
+    },
+    // 更新用户的信息存入userInfo之中
+    updateUserInfo (state, UserInfo) {
+      state.userInfo = UserInfo
+      this.commit('m_user/saveUserInfoToStorage')
+    },
+    // 将token储存在本地
+    updateToken (state, token) {
+      state.token = token
+      this.commit('m_user/saveTokenToStorage')
+    },
+    updateRedirectInfo (state, info) {
+      state.redirectInfo = info
     }
   },
   getters: {

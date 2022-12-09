@@ -8,7 +8,7 @@
         <!-- 左侧的图标 -->
         <uni-icons type="shop" size="18"></uni-icons>
         <!-- 描述文本 -->
-        <text class="cart-title-text">购物车</text>
+        <text class="cart-title-text" >购物车</text>
         <!-- <search></search> -->
       </view>
     </view>
@@ -85,7 +85,7 @@ export default {
     // 点击滑动删除按钮
     swipeActionClickHandler (e) {
       this.deleteCartGoods(e)
-    }
+    },
   },
 }
 </script>
